@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180112 11:03:06.773" generator="Robot 3.0.2 (Python 2.7.14 on win32)">
+<suite source="D:\WelfareFundRobot\communityRobot.robot" id="s1" name="communityRobot">
+<test id="s1-t1" name="Community">
+<kw name="login">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>http://104.155.211.235/WelfareFundMVC/login.jsp</arg>
+<arg>gc</arg>
+</arguments>
+<msg timestamp="20180112 11:03:06.892" level="INFO">Opening browser 'gc' to base url 'http://104.155.211.235/WelfareFundMVC/login.jsp'.</msg>
+<status status="PASS" endtime="20180112 11:03:15.436" starttime="20180112 11:03:06.892"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=username</arg>
+<arg>admin</arg>
+</arguments>
+<msg timestamp="20180112 11:03:15.437" level="INFO">Typing text 'admin' into text field 'id=username'.</msg>
+<status status="PASS" endtime="20180112 11:03:15.525" starttime="20180112 11:03:15.436"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=password</arg>
+<arg>admin1234</arg>
+</arguments>
+<msg timestamp="20180112 11:03:15.525" level="INFO">Typing text 'admin1234' into text field 'id=password'.</msg>
+<status status="PASS" endtime="20180112 11:03:15.615" starttime="20180112 11:03:15.525"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>id=buttonLogin</arg>
+</arguments>
+<msg timestamp="20180112 11:03:15.616" level="INFO">Clicking element 'id=buttonLogin'.</msg>
+<status status="PASS" endtime="20180112 11:03:15.880" starttime="20180112 11:03:15.615"></status>
+</kw>
+<status status="PASS" endtime="20180112 11:03:15.880" starttime="20180112 11:03:06.891"></status>
+</kw>
+<kw name="setSpeed">
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>.3 seconds</arg>
+</arguments>
+<status status="PASS" endtime="20180112 11:03:15.883" starttime="20180112 11:03:15.882"></status>
+</kw>
+<status status="PASS" endtime="20180112 11:03:15.884" starttime="20180112 11:03:15.881"></status>
+</kw>
+<kw name="AddCommunityName">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>id=manageCommunity</arg>
+</arguments>
+<msg timestamp="20180112 11:03:15.885" level="INFO">Clicking element 'id=manageCommunity'.</msg>
+<status status="PASS" endtime="20180112 11:03:20.945" starttime="20180112 11:03:15.885"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>id=addCommunity</arg>
+</arguments>
+<msg timestamp="20180112 11:03:20.946" level="INFO">Clicking element 'id=addCommunity'.</msg>
+<status status="PASS" endtime="20180112 11:03:22.205" starttime="20180112 11:03:20.945"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=communityName</arg>
+<arg>หนองนาคำค้ำจุนโลก</arg>
+</arguments>
+<msg timestamp="20180112 11:03:22.296" level="INFO">Typing text 'หนองนาคำค้ำจุนโลก' into text field 'id=communityName'.</msg>
+<status status="PASS" endtime="20180112 11:03:23.309" starttime="20180112 11:03:22.205"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>id=saveCommunity</arg>
+</arguments>
+<msg timestamp="20180112 11:03:23.309" level="INFO">Clicking element 'id=saveCommunity'.</msg>
+<status status="PASS" endtime="20180112 11:03:23.965" starttime="20180112 11:03:23.309"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>id=allCommunity</arg>
+</arguments>
+<msg timestamp="20180112 11:03:23.965" level="INFO">Clicking element 'id=allCommunity'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20180112 11:03:25.743" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20180112 11:03:25.743" starttime="20180112 11:03:24.276"></status>
+</kw>
+<msg timestamp="20180112 11:03:25.745" level="FAIL">Element with locator 'id=allCommunity' not found.</msg>
+<status status="FAIL" endtime="20180112 11:03:25.745" starttime="20180112 11:03:23.965"></status>
+</kw>
+<status status="FAIL" endtime="20180112 11:03:25.746" starttime="20180112 11:03:15.885"></status>
+</kw>
+<status status="FAIL" endtime="20180112 11:03:25.746" critical="yes" starttime="20180112 11:03:06.891">Element with locator 'id=allCommunity' not found.</status>
+</test>
+<status status="FAIL" endtime="20180112 11:03:25.750" starttime="20180112 11:03:06.775"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="communityRobot" pass="0">communityRobot</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
